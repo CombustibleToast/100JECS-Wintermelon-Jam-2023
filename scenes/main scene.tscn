@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://1mby6blxc610"]
+
+[ext_resource type="Texture2D" uid="uid://8bqe5lrse4dn" path="res://Sprites/fishestgup1.png" id="1_eljaa"]
+[ext_resource type="Script" path="res://Scripts/main character.gd" id="1_vb12f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4alq7"]
+size = Vector2(28, 16)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(117, 88)
+scale = Vector2(5.69348, 5.69348)
+script = ExtResource("1_vb12f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_4alq7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_eljaa")
