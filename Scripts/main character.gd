@@ -20,16 +20,19 @@ func _physics_process(delta):
 	# Handle X input
 	var x_direction = Input.get_axis("left", "right")
 	if x_direction:
-		velocity.x = x_direction * SPEED
+		velocity.x = x_direction
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED) #lerp?
 	
 	# Handle Y input
 	var y_direction = Input.get_axis("up", "down")
 	if y_direction:
-		velocity.y = y_direction * SPEED
+		velocity.y = y_direction
 	else:
 		velocity.y = move_toward(velocity.y, 0, SPEED) #lerp?
+
+	# Normalize movement so moving on diagonals isn't faster
+	velocity = velocity.normalized() * SPEED;
 	
 	# There is certainly a better way to get and process user input -Ena
 
