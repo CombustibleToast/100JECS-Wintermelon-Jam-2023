@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://bl22nydq2dimo"]
+
+[ext_resource type="Script" path="res://Scripts/inventory.gd" id="1_b1ch3"]
+[ext_resource type="Texture2D" uid="uid://bkvyqiavk1bvs" path="res://Sprites/placeholder phone.png" id="1_h2mbv"]
+[ext_resource type="PackedScene" uid="uid://ccwd4jkoj4is6" path="res://scenes/charm slot.tscn" id="2_2wst7"]
+
+[node name="Inventory (Control Node)" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b1ch3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(656, 376)
+scale = Vector2(9.72, 9.72)
+texture = ExtResource("1_h2mbv")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 205.0
+offset_right = 245.0
+offset_bottom = 269.0
+scale = Vector2(5.563, 5.563)
+theme_override_constants/h_separation = 19
+columns = 10
+
+[node name="Panel2" parent="GridContainer" instance=ExtResource("2_2wst7")]
+layout_mode = 2
+
+[node name="Panel" parent="GridContainer" instance=ExtResource("2_2wst7")]
+layout_mode = 2
+
+[node name="Panel3" parent="GridContainer" instance=ExtResource("2_2wst7")]
+layout_mode = 2
+
+[node name="Panel4" parent="GridContainer" instance=ExtResource("2_2wst7")]
+layout_mode = 2
+
+[node name="Panel5" parent="GridContainer" instance=ExtResource("2_2wst7")]
+layout_mode = 2
+
+[node name="Panel6" parent="GridContainer" instance=ExtResource("2_2wst7")]
+layout_mode = 2
+
+[node name="Panel7" parent="GridContainer" instance=ExtResource("2_2wst7")]
+layout_mode = 2
+
+[node name="Panel8" parent="GridContainer" instance=ExtResource("2_2wst7")]
+layout_mode = 2
+
+[node name="Panel9" parent="GridContainer" instance=ExtResource("2_2wst7")]
+layout_mode = 2
+
+[node name="Panel10" parent="GridContainer" instance=ExtResource("2_2wst7")]
+layout_mode = 2

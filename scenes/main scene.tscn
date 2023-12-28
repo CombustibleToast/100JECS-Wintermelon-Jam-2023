@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://1mby6blxc610"]
+[gd_scene load_steps=8 format=3 uid="uid://1mby6blxc610"]
 
 [ext_resource type="Texture2D" uid="uid://8bqe5lrse4dn" path="res://Sprites/fishestgup1.png" id="1_eljaa"]
 [ext_resource type="Script" path="res://Scripts/main character.gd" id="1_vb12f"]
 [ext_resource type="Texture2D" uid="uid://l3axkopxe5jx" path="res://icon.svg" id="3_org1u"]
+[ext_resource type="PackedScene" uid="uid://bl22nydq2dimo" path="res://scenes/inventory.tscn" id="4_pt4xh"]
+[ext_resource type="Script" path="res://Scripts/GUI Control.gd" id="4_wp3tu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4alq7"]
 size = Vector2(28, 16)
@@ -21,6 +23,12 @@ shape = SubResource("RectangleShape2D_4alq7")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player (CharacterBody)"]
 texture = ExtResource("1_eljaa")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("4_wp3tu")
+
+[node name="Inventory (Control Node)" parent="CanvasLayer" instance=ExtResource("4_pt4xh")]
+visible = false
 
 [node name="Sample Wall (StaticBody)" type="StaticBody2D" parent="."]
 position = Vector2(773, 288)
