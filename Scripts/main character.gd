@@ -33,4 +33,4 @@ func _physics_process(delta):
 	
 	# There is certainly a better way to get and process user input -Ena
 
-	move_and_slide()
+	move_and_slide() # This actually updates the node's position in the scene -Ena
