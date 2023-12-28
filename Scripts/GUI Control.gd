@@ -7,6 +7,8 @@ func _input(event):
 		match inventory_node.is_open:
 			true: inventory_node.close()
 			false: inventory_node.open()
+# Inventory control made using this tutorial https://www.youtube.com/watch?v=qLrj_HWA9CI
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
