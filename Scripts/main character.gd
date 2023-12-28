@@ -16,5 +16,8 @@ func _physics_process(delta):
 		velocity = input_vector.normalized() * SPEED;
 	else:
 		velocity = velocity.move_toward(Vector2(0,0), SPEED/10);
+		# Minor bug: does not handle diagonals well; 
+		#if you release one key slightly before the other, one of the components will instantly become 0 while the other smoothstops
+		# -Ena
 
 	move_and_slide() # This actually updates the node's position in the scene -Ena
