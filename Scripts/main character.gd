@@ -2,38 +2,19 @@ extends CharacterBody2D
 
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-#var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-# ^ topdown -- No gravity -Ena
 
 func _physics_process(delta):
-	# Add the gravity.
-	#if not is_on_floor():
-	#	velocity.y += gravity * delta
+	# This script was created from the template player controller script for the CharacterBody2D node,
+	# but I've gutted it and made it look nicer lol
+	# -Ena
 
-	# Handle jump.
-	#if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-	#	velocity.y = JUMP_VELOCITY
+	# Gather inputs and pack into Vec2 -Ena
+	var input_vector = Vector2(Input.get_axis("left", "right"), Input.get_axis("up", "down"))
 
-	# Handle X input
-	var x_direction = Input.get_axis("left", "right")
-	if x_direction:
-		velocity.x = x_direction
+	# Normalize movement so moving on diagonals isn't faster and apply to velocity
+	if input_vector.length() != 0:
+		velocity = input_vector.normalized() * SPEED;
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED) #lerp?
-	
-	# Handle Y input
-	var y_direction = Input.get_axis("up", "down")
-	if y_direction:
-		velocity.y = y_direction
-	else:
-		velocity.y = move_toward(velocity.y, 0, SPEED) #lerp?
-
-	# Normalize movement so moving on diagonals isn't faster
-	velocity = velocity.normalized() * SPEED;
-	
-	# There is certainly a better way to get and process user input -Ena
+		velocity = velocity.move_toward(Vector2(0,0), SPEED/10);
 
 	move_and_slide() # This actually updates the node's position in the scene -Ena
