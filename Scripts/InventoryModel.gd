@@ -11,6 +11,7 @@ func insert_charm(item: CharmInventoryItem):
 	for i in range(items.size()):
 		if !items[i]:
 			items[i] = item
+			break
 	
 	new_item_in_inventory.emit()
 	

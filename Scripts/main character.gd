@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+@onready var inventory: CharmInventory = preload("res://Resources/charm inventory.tres")
 const SPEED = 300.0
 
 func _physics_process(delta):
@@ -21,3 +21,8 @@ func _physics_process(delta):
 		# -Ena
 
 	move_and_slide() # This actually updates the node's position in the scene -Ena
+
+# Created and linked by Godot: https://youtu.be/WVQkOWY3zxQ?list=PLMQtM2GgbPEVuTgD4Ln17ombTg6EahSLr&t=774
+func _on_interact_box_area_entered(area:Area2D):
+	if(area.has_method("collect")):
+		area.collect(inventory)

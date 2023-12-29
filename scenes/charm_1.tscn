@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://5s0ggc164avm"]
+
+[ext_resource type="PackedScene" uid="uid://cmc82wpjc4sr7" path="res://scenes/collectable charm.tscn" id="1_ojfg7"]
+[ext_resource type="Resource" uid="uid://b7anch3erxcme" path="res://Resources/charm 1.tres" id="2_5d0o0"]
+[ext_resource type="Texture2D" uid="uid://8g5hb54ugdxo" path="res://Sprites/placeholder charm 1.png" id="2_qv06r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mcokx"]
+resource_local_to_scene = true
+size = Vector2(16, 64)
+
+[node name="Charm 1" instance=ExtResource("1_ojfg7")]
+associated_inventory_item_resource = ExtResource("2_5d0o0")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_mcokx")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_qv06r")
