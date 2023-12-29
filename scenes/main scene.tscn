@@ -10,7 +10,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Player (CharacterBody)" parent="." instance=ExtResource("1_m11gp")]
-position = Vector2(354, 207)
+position = Vector2(374, 188)
 scale = Vector2(7.68, 7.68)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

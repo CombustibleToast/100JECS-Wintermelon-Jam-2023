@@ -1,10 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://ccwd4jkoj4is6"]
+[gd_scene load_steps=3 format=3 uid="uid://ccwd4jkoj4is6"]
 
 [ext_resource type="Texture2D" uid="uid://clh77xwmjeevh" path="res://Sprites/placeholder charm.png" id="1_kklrr"]
+[ext_resource type="Script" path="res://Scripts/charm slot.gd" id="1_yw7ld"]
 
 [node name="Panel" type="Panel"]
 self_modulate = Color(1, 1, 1, 0)
-anchors_preset = -1
+script = ExtResource("1_yw7ld")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(8, 32)
