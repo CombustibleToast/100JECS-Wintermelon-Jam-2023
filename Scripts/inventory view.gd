@@ -7,6 +7,7 @@ var is_open: bool = false
 @onready var slots: Array = $GridContainer.get_children()
 
 func _ready():
+	inventory.new_item_in_inventory.connect(update())
 	update()
 
 func update():
