@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="CharmInventoryItem" load_steps=3 format=3 uid="uid://et47h730k8vi"]
+
+[ext_resource type="Script" path="res://Scripts/CharmInventoryItem.gd" id="1_r0mc8"]
+[ext_resource type="Texture2D" uid="uid://dktyq7bqjeci4" path="res://Sprites/placeholder charm 4.png" id="2_p3k2i"]
+
+[resource]
+script = ExtResource("1_r0mc8")
+texture = ExtResource("2_p3k2i")

@@ -1,12 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://ccwd4jkoj4is6"]
 
-[ext_resource type="Texture2D" uid="uid://clh77xwmjeevh" path="res://Sprites/placeholder charm.png" id="1_kklrr"]
-[ext_resource type="Script" path="res://Scripts/charm slot.gd" id="1_yw7ld"]
+[ext_resource type="Script" path="res://Scripts/charm slot gui.gd" id="1_rcllf"]
+[ext_resource type="Texture2D" uid="uid://crigs7ddbst35" path="res://Sprites/placeholder slot.png" id="2_72lc3"]
 
 [node name="Panel" type="Panel"]
 self_modulate = Color(1, 1, 1, 0)
-script = ExtResource("1_yw7ld")
+script = ExtResource("1_rcllf")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(8, 32)
-texture = ExtResource("1_kklrr")
+[node name="charm" type="Sprite2D" parent="."]
+position = Vector2(16, 30)
+
+[node name="slot background" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(16, 32)
+texture = ExtResource("2_72lc3")
