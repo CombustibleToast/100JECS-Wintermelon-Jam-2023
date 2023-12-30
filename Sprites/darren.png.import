@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bl2pqni3atvfs"
-path="res://.godot/imported/charmfreddy.png-4897661d4af5bbbed597fe5137d6ccf5.ctex"
+uid="uid://do6fs2j2xig0y"
+path="res://.godot/imported/darren.png-5cd3ca46f4f232b316f18be6539ed368.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/charmfreddy.png"
-dest_files=["res://.godot/imported/charmfreddy.png-4897661d4af5bbbed597fe5137d6ccf5.ctex"]
+source_file="res://Sprites/darren.png"
+dest_files=["res://.godot/imported/darren.png-5cd3ca46f4f232b316f18be6539ed368.ctex"]
 
 [params]
 

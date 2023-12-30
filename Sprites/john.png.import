@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chunng4s8ysto"
-path="res://.godot/imported/charmjohn.png-7bfff3bdd91731fd55af6520e7f2cc26.ctex"
+path="res://.godot/imported/john.png-cd1bdaae697ad421d0ba0220ce80621f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/charmjohn.png"
-dest_files=["res://.godot/imported/charmjohn.png-7bfff3bdd91731fd55af6520e7f2cc26.ctex"]
+source_file="res://Sprites/john.png"
+dest_files=["res://.godot/imported/john.png-cd1bdaae697ad421d0ba0220ce80621f.ctex"]
 
 [params]
 
