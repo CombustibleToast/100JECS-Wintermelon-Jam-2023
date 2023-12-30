@@ -19,30 +19,51 @@ else
 => END
 
 ~ tutorial
-Freddy: Oh, Brit, hey, over here!
-Freddy: Still recognize lil ol me? yep i'm still casting spells. still disappointing my dad. that's me
-Freddy: it was nice hearing your voice on the phone last night, been a year since i've heard you that hype.
-you were all excited for us to go to the mall and pick up a date for valentine's day.
-knowing you i guess you're looking for more than just one, but that's where i help, right?
-Britney: ...
-Freddy: ...oh, yeah, the phone, right. i made sure to reapply the enchantment after you called. It's all gassed up and ready for ya. lols
-Freddy: you do remember the phone? how to use it?
-Britney: ...
-Freddy: what do you mean you don't remember you dorkasaurus, you called me here!!
-Britney: sorry lols
-Freddy: okay, as long as you have my magic phone in your inventory walk up to someone, 
-and talk to them. Boys are simple, they should let you know right away what aespects of your personality appeal most to them. It's up to YOU to work your charm!
-Freddy: What if your charm isn't enough? Well, I just so happen to know this mall is a nexus point for magical items.
-If you find your base level of charm isn't enough try looking around for a magic item to attatch to the charm loop on the phone!
-But BE CAREFUL... a magic charm isn't something to tread lighly with. Magical Items can have... detrimental effects.
-And once you attach one to your phone, there's no undoing what happens.
-Britney: ...
-Freddy: HONESTLYDONTEVENWORRYABOUTITLOL Just have fun :3
-Freddy: I learned all this from this ancient text called the Canto Enchiridius, so who knows if what I'm saying
-is even correct. Here take a look chart from the book, in English, it is known as the RIZZ WHEEL.
-Freddy:  i don't know what it means either basically just use the charms that seem right for the guy.
-you can find charms around the mall. showing you care is the fastest way to someone's heart.
-oh, and one more thing... do not to let the Voice On The Phone hear you.
+if tutorialComplete == false:
+	Freddy: Oh, Brit, hey, over here!
+	Freddy: Still recognize lil ol me? yep i'm still casting spells. still disappointing my dad. that's me
+	Freddy: it was nice hearing your voice on the phone last night, been a year since i've heard you that hype.
+	you were all excited for us to go to the mall and pick up a date for valentine's day.
+	knowing you i guess you're looking for more than just one, but that's where i help, right?
+	Britney: ...
+	Freddy: ...oh, yeah, the phone, right. i made sure to reapply the enchantment after you called. It's all gassed up and ready for ya. lols
+	Freddy: you do remember the phone? how to use it?
+	Britney: ...
+	Freddy: what do you mean you don't remember you dorkasaurus, you called me here!!
+	Britney: sorry lols
+	Freddy: okay, as long as you have my magic phone in your inventory walk up to someone, 
+	and talk to them. Boys are simple, they should let you know right away what aespects of your personality appeal most to them. It's up to YOU to work your charm!
+	Freddy: What if your charm isn't enough? Well, I just so happen to know this mall is a nexus point for magical items.
+	If you find your base level of charm isn't enough try looking around for a magic item to attatch to the charm loop on the phone!
+	But BE CAREFUL... a magic charm isn't something to tread lighly with. Magical Items can have... detrimental effects.
+	And once you attach one to your phone, there's no undoing what happens.
+	Britney: ...
+	Freddy: HONESTLYDONTEVENWORRYABOUTITLOL Just have fun :3
+	Freddy: I learned all this from this ancient text called the Canto Enchiridius, so who knows if what I'm saying
+	is even correct. Here take a look chart from the book, in English, it is known as the RIZZ WHEEL.
+	Freddy:  i don't know what it means either basically just use the charms that seem right for the guy.
+	you can find charms around the mall. showing you care is the fastest way to someone's heart.
+	oh, and one more thing... do not to let the Voice On The Phone hear you.
+	set tutorialComplete = true
+else:
+	Freddy: oh hey, still need pointers?
+	- Yes
+		Freddy: okay, as long as you have my magic phone in your inventory walk up to someone, 
+		and talk to them. Boys are simple, they should let you know right away what aespects of your personality appeal most to them. It's up to YOU to work your charm!
+		Freddy: What if your charm isn't enough? Well, I just so happen to know this mall is a nexus point for magical items.
+		If you find your base level of charm isn't enough try looking around for a magic item to attatch to the charm loop on the phone!
+		But BE CAREFUL... a magic charm isn't something to tread lighly with. Magical Items can have... detrimental effects.
+		And once you attach one to your phone, there's no undoing what happens.
+		Britney: ...
+		Freddy: HONESTLYDONTEVENWORRYABOUTITLOL Just have fun :3
+		Freddy: I learned all this from this ancient text called the Canto Enchiridius, so who knows if what I'm saying
+		is even correct. Here take a look chart from the book, in English, it is known as the RIZZ WHEEL.
+		Freddy:  i don't know what it means either basically just use the charms that seem right for the guy.
+		you can find charms around the mall. showing you care is the fastest way to someone's heart.
+		oh, and one more thing... do not to let the Voice On The Phone hear you.
+	- No
+		Freddy: lols ok bye
+
 => END
 
 ~ John
@@ -90,31 +111,6 @@ else
 		Britney: *Is he serious, I love LOJ. I wish I had to confidence to speak up*
 		Britney: ...
 		John: If only there was such thing as a REAL gamer girl  
-=> END
-
-~ Nyan
-if loveNyan == true:
-	Nyatthew: OH EM GEE!!! IT"S MY FAVOWITE HUMAN! *Pounces with excitment* WUTS UP BWITTANNY! 
-elif flattery > 3:
-	Britney: Hewwo, hi you cute little kitty!
-	Nyatthew: UWU?
-	Britney: I LOVE your kitty ears, they look so soft
-	Nyatthew: THXX!!!!! OMG UR SO SWEET 2 ME! <3 <3
-	Britney: Well I was thinking...
-	Nyatthew: OF GETTING MARRIED?? I DON THINK IM READY FOR DAT!!
-	Britney: Uh... no a date... for Valentines day.
-	Nyatthew: OH!!! I C! SO YOU WAN 2 HANG OUT! THEN WE CULD RULE TEH WORLD WITH TEH DARK SIDE (It has cookies :3)
-	Britney: Yeah... (What have I gotten myself into now)
-	set loveNyan = true
-else
-	Britney: Hello
-	Nyatthew: ...
-	Britney: Hewwo?
-	Nyatthew: HEWOO!!! 
-	Nyatthew: LOL LIEK WHO R U? WHY R UR CLOTHEZ SO BLACK RLY KILLIN TEH MOOD XD! MY OUTFIT IS KAWAII THOUGH RIGHT??!
-	Nyatthew: OTHER BOYZ MUST SEZ U A 2TAL LAMEO! TEH KRIIPY KITEH DAS YU!!! GOT NO FRENS ON UR SPACESPACE PAGE LOLOL. ME??? I'M LIKE A CELEB ON DERR, I LOVE ATTENTIONNNN!!
-	Britney: Oh, um, sorry to bother you. I just thought maybe we could, you know, chat or something.
-	Nyatthew: LOLOL U CHTTIN WITH TEH CUTESY KITTY IN TOWWN? ROFL NO MY FRWENS HAVE TASTE. YOU HAVEN'T EVEN COMPLIMENTED MY CUTE KITTYKAT EARS D:<
 => END
 
 
