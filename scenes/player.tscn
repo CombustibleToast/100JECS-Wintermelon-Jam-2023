@@ -1,13 +1,75 @@
-[gd_scene load_steps=6 format=3 uid="uid://b0i2mp7bid5r7"]
+[gd_scene load_steps=14 format=3 uid="uid://b0i2mp7bid5r7"]
 
 [ext_resource type="Script" path="res://Scripts/main character.gd" id="1_oxeph"]
+[ext_resource type="Texture2D" uid="uid://drcndstdqqjga" path="res://Sprites/charmyennefermore.png" id="2_ceogh"]
 [ext_resource type="Texture2D" uid="uid://8bqe5lrse4dn" path="res://Sprites/fishestgup1.png" id="2_p02ts"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4alq7"]
-size = Vector2(28, 16)
+size = Vector2(18, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqr08"]
+atlas = ExtResource("2_ceogh")
+region = Rect2(2, 2, 20, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ks8w"]
+atlas = ExtResource("2_ceogh")
+region = Rect2(25, 2, 20, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6e80j"]
+atlas = ExtResource("2_ceogh")
+region = Rect2(48, 2, 20, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7vst0"]
+atlas = ExtResource("2_ceogh")
+region = Rect2(0, 31, 21, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ndco"]
+atlas = ExtResource("2_ceogh")
+region = Rect2(24, 31, 21, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iraul"]
+atlas = ExtResource("2_ceogh")
+region = Rect2(48, 31, 21, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m1l77"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqr08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ks8w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6e80j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ks8w")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7vst0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ndco")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iraul")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ndco")
+}],
+"loop": true,
+"name": &"walk_up",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g5jod"]
-size = Vector2(34, 22)
+size = Vector2(24, 26)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3866k"]
 radius = 31.0161
@@ -16,14 +78,21 @@ radius = 31.0161
 script = ExtResource("1_oxeph")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 2)
 shape = SubResource("RectangleShape2D_4alq7")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Brittany" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_m1l77")
+animation = &"walk_up"
+
+[node name="gup" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("2_p02ts")
 
 [node name="Interact Box" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interact Box"]
+position = Vector2(1, 2)
 shape = SubResource("RectangleShape2D_g5jod")
 
 [node name="Direction" type="Marker2D" parent="."]

@@ -3,6 +3,7 @@ extends CharacterBody2D
 @onready var inventory: CharmInventory = preload("res://Resources/charm inventory.tres")
 const SPEED = 600.0
 @onready var actionable_finder: Area2D = $Direction/ActionableFinder
+@onready var sprite: AnimatedSprite2D = $Brittany
 
 func _physics_process(_delta):
 	# This script was created from the template player controller script for the CharacterBody2D node,
@@ -20,6 +21,14 @@ func _physics_process(_delta):
 		# Minor bug: does not handle diagonals well; 
 		#if you release one key slightly before the other, one of the components will instantly become 0 while the other smoothstops
 		# -Ena
+
+	# Update animated sprite walk direction
+	# Remember that negative y is up -Ena
+	if velocity.y < -0.01:
+		sprite.play("walk_up")
+	if velocity.y > 0.01: #not using an else here because I want the direction to "stick" when the player moves horizontally
+		sprite.play("walk_down")
+
 
 	move_and_slide() # This actually updates the node's position in the scene -Ena
 
