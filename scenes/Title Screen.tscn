@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://dwcvr6vbx37cf"]
 
+[ext_resource type="Texture2D" uid="uid://bcwprlxghtpsg" path="res://Sprites/moodymallpixel.png" id="1_2iytu"]
 [ext_resource type="Texture2D" uid="uid://p5veq8x4oqgh" path="res://Sprites/Main Menu/Title.png" id="1_4u7px"]
 [ext_resource type="Texture2D" uid="uid://beqtcin24wa6v" path="res://Sprites/Main Menu/Splash.png" id="2_wimhm"]
 [ext_resource type="Script" path="res://Scripts/Play Button.gd" id="3_wgs8j"]
-[ext_resource type="Texture2D" uid="uid://nce88s2vu3d" path="res://Sprites/charmoutiecorners.png" id="4_sghc7"]
 
 [node name="Control" type="MarginContainer"]
 anchors_preset = 15
@@ -15,8 +15,7 @@ grow_vertical = 2
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -1
 layout_mode = 2
-texture = ExtResource("4_sghc7")
-stretch_mode = 1
+texture = ExtResource("1_2iytu")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 2
