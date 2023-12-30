@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://cmug4y732tm4k"]
+
+[ext_resource type="Script" path="res://Scripts/NPC0.gd" id="1_eb1cn"]
+[ext_resource type="PackedScene" uid="uid://d0tegvc31y5r" path="res://scenes/actionable.tscn" id="2_i4bv3"]
+[ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="3_uvvyh"]
+[ext_resource type="Texture2D" uid="uid://8xjm2m3ix58b" path="res://Sprites/fishestgup2.png" id="4_4sfjf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_py3fr"]
+radius = 1.12948
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_770q0"]
+
+[node name="NPCNyan" type="Node2D"]
+script = ExtResource("1_eb1cn")
+
+[node name="Actionable" parent="." instance=ExtResource("2_i4bv3")]
+dialogue_resource = ExtResource("3_uvvyh")
+dialogue_start = "Nyan"
+
+[node name="CollisionConvo" type="CollisionShape2D" parent="Actionable"]
+scale = Vector2(15.155, 15.155)
+shape = SubResource("CircleShape2D_py3fr")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_770q0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("4_4sfjf")
