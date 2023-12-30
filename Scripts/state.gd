@@ -11,6 +11,7 @@ var confidence: int = 1
 var loveGodot: bool = false
 var tutorialComplete: bool = false
 var loveJohn: bool = false
+var loveNyan: bool = false
 
 #print every stat to the console
 func printStats():
