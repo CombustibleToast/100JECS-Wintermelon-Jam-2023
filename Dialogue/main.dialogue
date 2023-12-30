@@ -66,7 +66,55 @@ else:
 
 => END
 
+~ John
+Britney: Hello
+if loveJohn == true:
+	John: Hey do you want to come back to my place and play Legion of Justice? I also have Battleworld!!!
+elif confidence > 3:
+	John: Hm...? i'm like... doing something here... *heh*
+	John: You're that weirdo girl hangin' out with that total nerd Fred
+	John: She's the REAL pleb. she doesn't even play Legion of Justice.
+	Britney: ...??
+	John: ...what do you mean 'how do i know that?' everyone plays that awesome game.
+	John: everyone... except losers like her... i don't even have to ask her.
+	John: what about you...? heh... i bet you don't even know what it is...
+	Britney: ...
+	- Flirts
+		Britney: Bro... Legion of Justice is literally my favorite game
+		John: For real? I didn't know girls could play video games??! And with such good taste...
+		John: ...
+		John: Hey listen, if you're not doing anything later... do you want to meet at the Pizza place for a slice? My treat!
+		Britney: *Wow this is too easy*
+		John: huh what'd you say?
+		Britney: Nothing!
+		set loveJohn = true
+	- Combat
+		Britney: Heh... Legion of Justice? Yeah I played it, it's good if you like basic shooters I guess. I got bored after getting 16 platnuim in it or whatever
+		John: ...16th Platium but that's
+		Britney: Oh is that supposed to be hard or something?
+		Britney: Or maybe you're just bad at video games
+		John: ...no I just
+		Britney: Just what? You're cute when you get flusted
+		John: I'm not fl- wait did you say I was cute?
+		Britney: Eh I'm debating it, why don't you take me out on a date and help me decide how cute I think you actually are.
+		John: Wha- I mean- of course!!!
+		set loveJohn = true
+else
+	John: Hm...? i'm like... doing something here... *heh*
+	John: You're that weirdo girl hangin' out with that total nerd Fred
+	John: She's the REAL pleb. she doesn't even play Legion of Justice.
+	Britney: ...??
+	John: ...what do you mean 'how do i know that?' everyone plays that awesome game.
+	John: everyone... except losers like her... i don't even have to ask her.
+	John: what about you...? heh... i bet you don't even know what it is...
+	- ...
+		Britney: *Is he serious, I love LOJ. I wish I had to confidence to speak up*
+		Britney: ...
+		John: If only there was such thing as a REAL gamer girl  
+=> END
+
+
 ~ pick_up
 Britney: Don't mind if I do
-set apple_status = "has"
+#set apple_status = "has"
 => END

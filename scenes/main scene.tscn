@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://1mby6blxc610"]
+[gd_scene load_steps=18 format=3 uid="uid://1mby6blxc610"]
 
 [ext_resource type="PackedScene" uid="uid://cyiehnatqfhck" path="res://scenes/mall tilemap.tscn" id="1_a22w6"]
 [ext_resource type="PackedScene" uid="uid://b0i2mp7bid5r7" path="res://scenes/player.tscn" id="1_m11gp"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bl22nydq2dimo" path="res://scenes/inventory.tscn" id="4_pt4xh"]
 [ext_resource type="Script" path="res://Scripts/GUI Control.gd" id="4_wp3tu"]
 [ext_resource type="PackedScene" uid="uid://d0tegvc31y5r" path="res://scenes/actionable.tscn" id="5_nrwwu"]
+[ext_resource type="PackedScene" uid="uid://dxirohtc1n0sq" path="res://scenes/NPCJohn.tscn" id="5_pr3so"]
 [ext_resource type="PackedScene" uid="uid://5s0ggc164avm" path="res://scenes/charm_1.tscn" id="5_tv4ma"]
 [ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="6_43sgo"]
 [ext_resource type="Script" path="res://scenes/Label.gd" id="6_ah5oa"]
@@ -26,7 +27,7 @@ position = Vector2(587, 568)
 scale = Vector2(7.96, 7.96)
 
 [node name="Player (CharacterBody)" parent="." instance=ExtResource("1_m11gp")]
-position = Vector2(374, 188)
+position = Vector2(248, 888)
 scale = Vector2(7.68, 7.68)
 
 [node name="Camera2D" type="Camera2D" parent="Player (CharacterBody)"]
@@ -54,8 +55,12 @@ text = "Main screen Stat Text
 script = ExtResource("6_ah5oa")
 
 [node name="NPC0" parent="." instance=ExtResource("4_nhpjh")]
-position = Vector2(750, -99)
-scale = Vector2(-8.88883, 9.84793)
+position = Vector2(1185, -467)
+scale = Vector2(-7.77, 8.608)
+
+[node name="NPCJohn" parent="." instance=ExtResource("5_pr3so")]
+position = Vector2(204, 237)
+scale = Vector2(7, 7)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 script = ExtResource("4_wp3tu")
@@ -64,7 +69,7 @@ script = ExtResource("4_wp3tu")
 visible = false
 
 [node name="Sample Wall (StaticBody)" type="StaticBody2D" parent="."]
-position = Vector2(589, 886)
+position = Vector2(513, 1106)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sample Wall (StaticBody)"]
 scale = Vector2(6.4, 6.4)
@@ -81,7 +86,7 @@ scale = Vector2(15.155, 15.155)
 shape = SubResource("CircleShape2D_d75nb")
 
 [node name="Charm 1 At" parent="." instance=ExtResource("5_tv4ma")]
-position = Vector2(489, -83)
+position = Vector2(-1774, -716)
 
 [node name="Charm 2 Af" parent="." instance=ExtResource("9_st11y")]
 position = Vector2(-868, 534)
