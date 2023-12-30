@@ -1,12 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://cmc82wpjc4sr7"]
+[gd_scene load_steps=4 format=3 uid="uid://cmc82wpjc4sr7"]
 
 [ext_resource type="Script" path="res://Scripts/collectable charm.gd" id="1_d2pgs"]
+[ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="2_empfj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n314f"]
 resource_local_to_scene = true
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_d2pgs")
+dialogue_resource = ExtResource("2_empfj")
+dialogue_start = "pick_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_n314f")
