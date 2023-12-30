@@ -32,4 +32,4 @@ func close():
 
 func on_slot_clicked(slot):
 	print(slot.name)
-	slot.
+	
