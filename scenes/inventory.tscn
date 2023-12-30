@@ -19,41 +19,34 @@ scale = Vector2(9.72, 9.72)
 texture = ExtResource("1_h2mbv")
 
 [node name="GridContainer" type="GridContainer" parent="."]
-layout_mode = 0
-offset_left = 58.0
-offset_top = 205.0
-offset_right = 245.0
-offset_bottom = 269.0
-scale = Vector2(5.563, 5.563)
-theme_override_constants/h_separation = 39
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -489.0
+offset_top = -174.0
+offset_right = -305.0
+offset_bottom = -110.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5.36, 5.36)
+theme_override_constants/h_separation = 6
 columns = 5
 
-[node name="Panel2" parent="GridContainer" instance=ExtResource("2_2wst7")]
+[node name="Slot 0" parent="GridContainer" instance=ExtResource("2_2wst7")]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Slot 1" parent="GridContainer" instance=ExtResource("2_2wst7")]
 layout_mode = 2
 
-[node name="Panel" parent="GridContainer" instance=ExtResource("2_2wst7")]
+[node name="Slot 2" parent="GridContainer" instance=ExtResource("2_2wst7")]
 layout_mode = 2
 
-[node name="Panel3" parent="GridContainer" instance=ExtResource("2_2wst7")]
+[node name="Slot 3" parent="GridContainer" instance=ExtResource("2_2wst7")]
 layout_mode = 2
 
-[node name="Panel4" parent="GridContainer" instance=ExtResource("2_2wst7")]
-layout_mode = 2
-
-[node name="Panel5" parent="GridContainer" instance=ExtResource("2_2wst7")]
-layout_mode = 2
-
-[node name="Panel6" parent="GridContainer" instance=ExtResource("2_2wst7")]
-layout_mode = 2
-
-[node name="Panel7" parent="GridContainer" instance=ExtResource("2_2wst7")]
-layout_mode = 2
-
-[node name="Panel8" parent="GridContainer" instance=ExtResource("2_2wst7")]
-layout_mode = 2
-
-[node name="Panel9" parent="GridContainer" instance=ExtResource("2_2wst7")]
-layout_mode = 2
-
-[node name="Panel10" parent="GridContainer" instance=ExtResource("2_2wst7")]
+[node name="Slot 4" parent="GridContainer" instance=ExtResource("2_2wst7")]
 layout_mode = 2
