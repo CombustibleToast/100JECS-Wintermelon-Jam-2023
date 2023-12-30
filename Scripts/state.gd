@@ -17,5 +17,3 @@ func printStats():
     print("Flattery: " + str(flattery))
     print("Mystery: " + str(mystery))
     print("Confidence: " + str(confidence))
-
-

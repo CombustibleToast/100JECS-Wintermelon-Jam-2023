@@ -7,8 +7,8 @@
 [ext_resource type="Script" path="res://Scripts/GUI Control.gd" id="4_wp3tu"]
 [ext_resource type="PackedScene" uid="uid://d0tegvc31y5r" path="res://scenes/actionable.tscn" id="5_nrwwu"]
 [ext_resource type="PackedScene" uid="uid://5s0ggc164avm" path="res://scenes/charm_1.tscn" id="5_tv4ma"]
-[ext_resource type="Script" path="res://scenes/GuiControl2.gd" id="5_x8ap4"]
 [ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="6_43sgo"]
+[ext_resource type="Script" path="res://scenes/Label.gd" id="6_ah5oa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fat60"]
 
@@ -27,27 +27,32 @@ scale = Vector2(7.68, 7.68)
 [node name="Camera2D" type="Camera2D" parent="Player (CharacterBody)"]
 zoom = Vector2(0.5, 0.5)
 
+[node name="Control" type="Control" parent="Player (CharacterBody)/Camera2D"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 86.9792
+offset_top = 116.016
+offset_right = 118.979
+offset_bottom = 180.016
+
+[node name="Label" type="Label" parent="Player (CharacterBody)/Camera2D/Control"]
+visible = false
+visibility_layer = 3
+layout_mode = 1
+offset_left = -232.031
+offset_top = -197.266
+offset_right = -65.0313
+offset_bottom = -174.266
+text = "Main screen Stat Text
+"
+script = ExtResource("6_ah5oa")
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 script = ExtResource("4_wp3tu")
 
 [node name="Inventory (Control Node)" parent="CanvasLayer" instance=ExtResource("4_pt4xh")]
 visible = false
-
-[node name="Control" type="Control" parent="CanvasLayer"]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("5_x8ap4")
-
-[node name="Label" type="Label" parent="CanvasLayer/Control"]
-unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = -1
-offset_left = -753.0
-offset_top = -433.0
-offset_right = -683.0
-offset_bottom = -410.0
-scale = Vector2(5, 5)
-text = "Test Text"
 
 [node name="Sample Wall (StaticBody)" type="StaticBody2D" parent="."]
 position = Vector2(773, 288)
