@@ -46,7 +46,7 @@ if tutorialComplete == false:
 	oh, and one more thing... do not to let the Voice On The Phone hear you.
 	set tutorialComplete = true
 else:
-	Freddy: Hey Brit, need help?
+	Freddy: oh hey, still need pointers?
 	- Yes
 		Freddy: okay, as long as you have my magic phone in your inventory walk up to someone, 
 		and talk to them. Boys are simple, they should let you know right away what aespects of your personality appeal most to them. It's up to YOU to work your charm!
