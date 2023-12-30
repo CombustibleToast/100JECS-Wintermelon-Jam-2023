@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://1mby6blxc610"]
+[gd_scene load_steps=17 format=3 uid="uid://1mby6blxc610"]
 
 [ext_resource type="PackedScene" uid="uid://cyiehnatqfhck" path="res://scenes/mall tilemap.tscn" id="1_a22w6"]
 [ext_resource type="PackedScene" uid="uid://b0i2mp7bid5r7" path="res://scenes/player.tscn" id="1_m11gp"]
 [ext_resource type="Texture2D" uid="uid://l3axkopxe5jx" path="res://icon.svg" id="3_org1u"]
+[ext_resource type="PackedScene" uid="uid://b7livbmiv1tc" path="res://scenes/NPC0.tscn" id="4_nhpjh"]
 [ext_resource type="PackedScene" uid="uid://bl22nydq2dimo" path="res://scenes/inventory.tscn" id="4_pt4xh"]
 [ext_resource type="Script" path="res://Scripts/GUI Control.gd" id="4_wp3tu"]
 [ext_resource type="PackedScene" uid="uid://d0tegvc31y5r" path="res://scenes/actionable.tscn" id="5_nrwwu"]
@@ -52,6 +53,10 @@ text = "Main screen Stat Text
 "
 script = ExtResource("6_ah5oa")
 
+[node name="NPC0" parent="." instance=ExtResource("4_nhpjh")]
+position = Vector2(750, -99)
+scale = Vector2(-8.88883, 9.84793)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 script = ExtResource("4_wp3tu")
 
@@ -59,7 +64,7 @@ script = ExtResource("4_wp3tu")
 visible = false
 
 [node name="Sample Wall (StaticBody)" type="StaticBody2D" parent="."]
-position = Vector2(773, 288)
+position = Vector2(589, 886)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sample Wall (StaticBody)"]
 scale = Vector2(6.4, 6.4)
@@ -76,7 +81,7 @@ scale = Vector2(15.155, 15.155)
 shape = SubResource("CircleShape2D_d75nb")
 
 [node name="Charm 1 At" parent="." instance=ExtResource("5_tv4ma")]
-position = Vector2(404, 446)
+position = Vector2(489, -83)
 
 [node name="Charm 2 Af" parent="." instance=ExtResource("9_st11y")]
 position = Vector2(-868, 534)
