@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dwcvr6vbx37cf"]
+[gd_scene load_steps=6 format=3 uid="uid://dwcvr6vbx37cf"]
 
 [ext_resource type="Texture2D" uid="uid://p5veq8x4oqgh" path="res://Sprites/Main Menu/Title.png" id="1_4u7px"]
 [ext_resource type="Texture2D" uid="uid://beqtcin24wa6v" path="res://Sprites/Main Menu/Splash.png" id="2_wimhm"]
 [ext_resource type="Script" path="res://Scripts/Play Button.gd" id="3_wgs8j"]
 [ext_resource type="Texture2D" uid="uid://nce88s2vu3d" path="res://Sprites/charmoutiecorners.png" id="4_sghc7"]
+[ext_resource type="Script" path="res://Scripts/Background.gd" id="5_q2ygu"]
 
 [node name="MarginContainer" type="MarginContainer"]
 anchors_preset = 15
@@ -41,14 +42,12 @@ layout_mode = 2
 text = "PLAY"
 script = ExtResource("3_wgs8j")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
-layout_mode = 2
-
-[node name="Background" type="TextureRect" parent="PanelContainer"]
+[node name="Background" type="TextureRect" parent="."]
 z_index = -2
 layout_mode = 2
 texture = ExtResource("4_sghc7")
 expand_mode = 5
 stretch_mode = 1
+script = ExtResource("5_q2ygu")
 
 [connection signal="pressed" from="VBoxContainer/MarginContainer/CenterContainer/Play Button" to="VBoxContainer/MarginContainer/CenterContainer/Play Button" method="_on_pressed"]
