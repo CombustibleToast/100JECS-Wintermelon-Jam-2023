@@ -1,9 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cmc82wpjc4sr7"]
+[gd_scene load_steps=6 format=3 uid="uid://cmc82wpjc4sr7"]
 
 [ext_resource type="Script" path="res://Scripts/collectable charm.gd" id="1_d2pgs"]
+[ext_resource type="PackedScene" uid="uid://d0tegvc31y5r" path="res://scenes/actionable.tscn" id="2_q6bh4"]
+[ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="3_20hh7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n314f"]
 resource_local_to_scene = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvyqn"]
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_d2pgs")
@@ -12,3 +16,11 @@ script = ExtResource("1_d2pgs")
 shape = SubResource("RectangleShape2D_n314f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Actionable" parent="." instance=ExtResource("2_q6bh4")]
+dialogue_resource = ExtResource("3_20hh7")
+dialogue_start = "pick_up"
+
+[node name="CollisionAction" type="CollisionShape2D" parent="Actionable"]
+shape = SubResource("RectangleShape2D_uvyqn")
+debug_color = Color(0.741176, 0.219608, 1, 0.419608)

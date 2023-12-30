@@ -6,3 +6,4 @@
 [resource]
 script = ExtResource("1_l6rm0")
 texture = ExtResource("2_hatoe")
+statboost = []
