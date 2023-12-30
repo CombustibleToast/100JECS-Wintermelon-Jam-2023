@@ -84,10 +84,10 @@ theme = SubResource("Theme_qq3yp")
 [node name="DisplayImage" type="TextureRect" parent="Balloon"]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 639.0
-offset_top = -241.0
-offset_right = 679.0
-offset_bottom = -201.0
+offset_left = 246.0
+offset_top = -499.0
+offset_right = 286.0
+offset_bottom = -459.0
 
 [node name="Dialogue" type="MarginContainer" parent="Balloon"]
 layout_mode = 1

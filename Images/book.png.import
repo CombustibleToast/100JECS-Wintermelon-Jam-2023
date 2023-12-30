@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1f11jlflkeo8"
-path="res://.godot/imported/THE RIZZ WHEEL.png-6617d29a4b9406492af9c2154494e85d.ctex"
+path="res://.godot/imported/book.png-bdb02e6444db9372854a92cd94389f9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/THE RIZZ WHEEL.png"
-dest_files=["res://.godot/imported/THE RIZZ WHEEL.png-6617d29a4b9406492af9c2154494e85d.ctex"]
+source_file="res://Images/book.png"
+dest_files=["res://.godot/imported/book.png-bdb02e6444db9372854a92cd94389f9a.ctex"]
 
 [params]
 

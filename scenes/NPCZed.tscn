@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/NPC0.gd" id="1_5q655"]
 [ext_resource type="PackedScene" uid="uid://d0tegvc31y5r" path="res://scenes/actionable.tscn" id="2_srs5y"]
 [ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="3_rdxfl"]
-[ext_resource type="Texture2D" uid="uid://dcpvhrifttlkc" path="res://Sprites/charmnyatthew.png" id="4_gjt1s"]
+[ext_resource type="Texture2D" uid="uid://bn7bj3nibe3q8" path="res://Sprites/zed.png" id="4_0galc"]
 [ext_resource type="Texture2D" uid="uid://8xjm2m3ix58b" path="res://Sprites/fishestgup2.png" id="5_878hb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_py3fr"]
@@ -28,8 +28,8 @@ shape = SubResource("CircleShape2D_py3fr")
 shape = SubResource("RectangleShape2D_770q0")
 
 [node name="Zed" type="Sprite2D" parent="."]
-visible = false
-texture = ExtResource("4_gjt1s")
+texture = ExtResource("4_0galc")
 
 [node name="gup" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("5_878hb")

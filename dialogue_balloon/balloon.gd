@@ -44,7 +44,7 @@ var dialogue_line: DialogueLine:
 		else:
 			portrait.texture = null
 		
-		var image_path: String = "res://Images/%s.jpg" % dialogue_line.character.to_lower()
+		var image_path: String = "res://Images/%s.png" % dialogue_line.character.to_lower()
 		if ResourceLoader.exists(image_path):
 			displayImage.texture = load(image_path)
 		else:

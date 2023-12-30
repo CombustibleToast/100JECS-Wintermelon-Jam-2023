@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://cyiehnatqfhck" path="res://scenes/mall tilemap.tscn" id="1_a22w6"]
 [ext_resource type="PackedScene" uid="uid://b0i2mp7bid5r7" path="res://scenes/player.tscn" id="1_m11gp"]
-[ext_resource type="Texture2D" uid="uid://l3axkopxe5jx" path="res://icon.svg" id="3_org1u"]
 [ext_resource type="PackedScene" uid="uid://b7livbmiv1tc" path="res://scenes/NPC0.tscn" id="4_nhpjh"]
 [ext_resource type="PackedScene" uid="uid://bl22nydq2dimo" path="res://scenes/inventory.tscn" id="4_pt4xh"]
 [ext_resource type="Script" path="res://Scripts/GUI Control.gd" id="4_wp3tu"]
@@ -14,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bsm1qq4mfckcq" path="res://scenes/NPCNyan.tscn" id="6_vfcu2"]
 [ext_resource type="PackedScene" uid="uid://dqckiugo3bw8d" path="res://scenes/charm_2.tscn" id="9_st11y"]
 [ext_resource type="PackedScene" uid="uid://cm3gecdv8yr7f" path="res://scenes/charm_3.tscn" id="10_1v8qn"]
+[ext_resource type="Texture2D" uid="uid://8bqe5lrse4dn" path="res://Sprites/fishestgup1.png" id="11_8d5ot"]
 [ext_resource type="PackedScene" uid="uid://dfvv7qjlhbwrc" path="res://scenes/charm_4.tscn" id="11_wkxqf"]
 [ext_resource type="PackedScene" uid="uid://bv5pa6lvacy7n" path="res://scenes/charm_5.tscn" id="12_20jd6"]
 [ext_resource type="PackedScene" uid="uid://bydhk7lsdw1ma" path="res://scenes/NPCJesse.tscn" id="17_c76vg"]
@@ -31,7 +31,7 @@ position = Vector2(587, 568)
 scale = Vector2(7.96, 7.96)
 
 [node name="Player (CharacterBody)" parent="." instance=ExtResource("1_m11gp")]
-position = Vector2(248, 888)
+position = Vector2(234, 881)
 scale = Vector2(7.68, 7.68)
 
 [node name="Camera2D" type="Camera2D" parent="Player (CharacterBody)"]
@@ -59,11 +59,11 @@ text = "Main screen Stat Text
 script = ExtResource("6_ah5oa")
 
 [node name="NPC0" parent="." instance=ExtResource("4_nhpjh")]
-position = Vector2(827, -250)
+position = Vector2(-225, -5170)
 scale = Vector2(-7.77, 8.608)
 
 [node name="NPCJohn" parent="." instance=ExtResource("5_pr3so")]
-position = Vector2(-2104, -513)
+position = Vector2(-2467, -769)
 scale = Vector2(7, 7)
 
 [node name="NPCNyan" parent="." instance=ExtResource("6_vfcu2")]
@@ -85,14 +85,17 @@ script = ExtResource("4_wp3tu")
 visible = false
 
 [node name="Sample Wall (StaticBody)" type="StaticBody2D" parent="."]
-position = Vector2(513, 1106)
+position = Vector2(4420, 960)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sample Wall (StaticBody)"]
 scale = Vector2(6.4, 6.4)
 shape = SubResource("RectangleShape2D_fat60")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sample Wall (StaticBody)"]
-texture = ExtResource("3_org1u")
+position = Vector2(0, 7.99999)
+rotation = -3.10669
+scale = Vector2(-9.235, -10.6786)
+texture = ExtResource("11_8d5ot")
 
 [node name="Actionable" parent="Sample Wall (StaticBody)" instance=ExtResource("5_nrwwu")]
 dialogue_resource = ExtResource("6_43sgo")
@@ -106,19 +109,19 @@ position = Vector2(3043, -856)
 scale = Vector2(3, 3)
 
 [node name="Charm 2 Af" parent="." instance=ExtResource("9_st11y")]
-position = Vector2(-868, 315)
+position = Vector2(-772, 465)
 scale = Vector2(3, 3)
 
 [node name="Charm 3 Fl" parent="." instance=ExtResource("10_1v8qn")]
-position = Vector2(-2167, -793)
+position = Vector2(-2762, -2214)
 scale = Vector2(3, 3)
 
 [node name="Charm 4 My" parent="." instance=ExtResource("11_wkxqf")]
-position = Vector2(-2780, -2376)
+position = Vector2(2885, -4533)
 scale = Vector2(3, 3)
 
 [node name="Charm 5 Co" parent="." instance=ExtResource("12_20jd6")]
-position = Vector2(-2847, -3921)
+position = Vector2(1286, -5040)
 scale = Vector2(3, 3)
 
 [node name="NPCZed" parent="." instance=ExtResource("19_lnajs")]
