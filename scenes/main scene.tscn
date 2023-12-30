@@ -1,12 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://1mby6blxc610"]
+[gd_scene load_steps=10 format=3 uid="uid://1mby6blxc610"]
 
 [ext_resource type="PackedScene" uid="uid://b0i2mp7bid5r7" path="res://scenes/player.tscn" id="1_m11gp"]
 [ext_resource type="Texture2D" uid="uid://l3axkopxe5jx" path="res://icon.svg" id="3_org1u"]
 [ext_resource type="PackedScene" uid="uid://bl22nydq2dimo" path="res://scenes/inventory.tscn" id="4_pt4xh"]
 [ext_resource type="Script" path="res://Scripts/GUI Control.gd" id="4_wp3tu"]
+[ext_resource type="PackedScene" uid="uid://d0tegvc31y5r" path="res://scenes/actionable.tscn" id="5_nrwwu"]
 [ext_resource type="PackedScene" uid="uid://5s0ggc164avm" path="res://scenes/charm_1.tscn" id="5_tv4ma"]
+[ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="6_43sgo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fat60"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d75nb"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -29,6 +33,13 @@ shape = SubResource("RectangleShape2D_fat60")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sample Wall (StaticBody)"]
 texture = ExtResource("3_org1u")
+
+[node name="Actionable" parent="Sample Wall (StaticBody)" instance=ExtResource("5_nrwwu")]
+dialogue_resource = ExtResource("6_43sgo")
+
+[node name="CollisionConvo" type="CollisionShape2D" parent="Sample Wall (StaticBody)/Actionable"]
+scale = Vector2(15.155, 15.155)
+shape = SubResource("CircleShape2D_d75nb")
 
 [node name="Charm 1" parent="." instance=ExtResource("5_tv4ma")]
 position = Vector2(630, 446)
