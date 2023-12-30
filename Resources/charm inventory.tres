@@ -1,8 +1,7 @@
-[gd_resource type="Resource" script_class="CharmInventory" load_steps=3 format=3 uid="uid://i87yc2rfnbja"]
+[gd_resource type="Resource" script_class="CharmInventory" load_steps=2 format=3 uid="uid://i87yc2rfnbja"]
 
 [ext_resource type="Script" path="res://Scripts/InventoryModel.gd" id="1_4q7qt"]
-[ext_resource type="Resource" uid="uid://ben5snwa11eti" path="res://Resources/charm 3.tres" id="1_i6dod"]
 
 [resource]
 script = ExtResource("1_4q7qt")
-items = Array[Resource("res://Scripts/CharmInventoryItem.gd")]([null, null, ExtResource("1_i6dod"), null, null])
+items = Array[Resource("res://Scripts/CharmInventoryItem.gd")]([null, null, null, null, null])
