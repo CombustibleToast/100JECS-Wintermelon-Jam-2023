@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b0i2mp7bid5r7"]
+[gd_scene load_steps=6 format=3 uid="uid://b0i2mp7bid5r7"]
 
 [ext_resource type="Script" path="res://Scripts/main character.gd" id="1_oxeph"]
 [ext_resource type="Texture2D" uid="uid://8bqe5lrse4dn" path="res://Sprites/fishestgup1.png" id="2_p02ts"]
@@ -8,6 +8,9 @@ size = Vector2(28, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g5jod"]
 size = Vector2(34, 22)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3866k"]
+radius = 34.7131
 
 [node name="Player (CharacterBody)" type="CharacterBody2D"]
 script = ExtResource("1_oxeph")
@@ -22,5 +25,14 @@ texture = ExtResource("2_p02ts")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interact Box"]
 shape = SubResource("RectangleShape2D_g5jod")
+
+[node name="Direction" type="Marker2D" parent="."]
+
+[node name="ActionableFinder" type="Area2D" parent="Direction"]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionFinder" type="CollisionShape2D" parent="Direction/ActionableFinder"]
+shape = SubResource("CircleShape2D_3866k")
 
 [connection signal="area_entered" from="Interact Box" to="." method="_on_interact_box_area_entered"]
