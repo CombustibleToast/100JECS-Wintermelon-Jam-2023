@@ -24,6 +24,10 @@ State="*res://Scripts/state.gd"
 
 general/states=["State"]
 
+[display]
+
+window/size/viewport_width=1366
+
 [editor]
 
 version_control/plugin_name="GitPlugin"
