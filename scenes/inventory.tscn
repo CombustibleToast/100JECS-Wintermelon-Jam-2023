@@ -15,18 +15,20 @@ grow_vertical = 2
 script = ExtResource("1_736dy")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_left = 2.00006
-offset_top = 2.00003
-offset_right = 42.0001
-offset_bottom = 42.0
-scale = Vector2(28.7903, 16.2337)
+layout_mode = 0
+offset_left = -11.0
+offset_top = 3.0
+offset_right = 29.0
+offset_bottom = 43.0
+scale = Vector2(29.4231, 16.3673)
 color = Color(0.54902, 0.54902, 0.54902, 1)
 
 [node name="ColorRect" type="ColorRect" parent="ColorRect"]
 layout_mode = 0
-offset_top = -0.0616023
-offset_right = 40.0
-offset_bottom = 39.9384
+offset_left = -0.277874
+offset_top = -0.554406
+offset_right = 39.7221
+offset_bottom = 39.4456
 scale = Vector2(1.00193, 0.158485)
 color = Color(0.137255, 0.192157, 0.764706, 1)
 

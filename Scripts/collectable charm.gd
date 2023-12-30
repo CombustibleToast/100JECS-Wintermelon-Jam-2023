@@ -22,8 +22,6 @@ func collect(inventory: CharmInventory):
 	inventory.insert_charm(associated_inventory_item_resource);
 
 	# Update state values
-	#for loop where you iterate through each stat in the dictionary and add the value of the stat to the state
-	
 	for stat in associated_inventory_item_resource.stats:
 		State[stat] += associated_inventory_item_resource.stats[stat]
 

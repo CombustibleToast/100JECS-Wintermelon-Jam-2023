@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://1mby6blxc610"]
+[gd_scene load_steps=16 format=3 uid="uid://1mby6blxc610"]
 
 [ext_resource type="PackedScene" uid="uid://cyiehnatqfhck" path="res://scenes/mall tilemap.tscn" id="1_a22w6"]
 [ext_resource type="PackedScene" uid="uid://b0i2mp7bid5r7" path="res://scenes/player.tscn" id="1_m11gp"]
@@ -9,6 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://5s0ggc164avm" path="res://scenes/charm_1.tscn" id="5_tv4ma"]
 [ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="6_43sgo"]
 [ext_resource type="Script" path="res://scenes/Label.gd" id="6_ah5oa"]
+[ext_resource type="PackedScene" uid="uid://dqckiugo3bw8d" path="res://scenes/charm_2.tscn" id="9_st11y"]
+[ext_resource type="PackedScene" uid="uid://cm3gecdv8yr7f" path="res://scenes/charm_3.tscn" id="10_1v8qn"]
+[ext_resource type="PackedScene" uid="uid://dfvv7qjlhbwrc" path="res://scenes/charm_4.tscn" id="11_wkxqf"]
+[ext_resource type="PackedScene" uid="uid://bv5pa6lvacy7n" path="res://scenes/charm_5.tscn" id="12_20jd6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fat60"]
 
@@ -71,5 +75,17 @@ dialogue_resource = ExtResource("6_43sgo")
 scale = Vector2(15.155, 15.155)
 shape = SubResource("CircleShape2D_d75nb")
 
-[node name="Charm 1" parent="." instance=ExtResource("5_tv4ma")]
+[node name="Charm 1 At" parent="." instance=ExtResource("5_tv4ma")]
 position = Vector2(404, 446)
+
+[node name="Charm 2 Af" parent="." instance=ExtResource("9_st11y")]
+position = Vector2(-868, 534)
+
+[node name="Charm 3 Fl" parent="." instance=ExtResource("10_1v8qn")]
+position = Vector2(-2576, -669)
+
+[node name="Charm 4 My" parent="." instance=ExtResource("11_wkxqf")]
+position = Vector2(-2780, -2376)
+
+[node name="Charm 5 Co" parent="." instance=ExtResource("12_20jd6")]
+position = Vector2(-2704, -3898)
