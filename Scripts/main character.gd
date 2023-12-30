@@ -32,6 +32,12 @@ func _physics_process(_delta):
 
 	move_and_slide() # This actually updates the node's position in the scene -Ena
 
+
+func _ready():
+	sprite.play("walk_down")
+
+
+
 func _unhandled_input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("interact"):
 		var actionables = actionable_finder.get_overlapping_areas()
