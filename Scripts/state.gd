@@ -12,6 +12,9 @@ var loveGodot: bool = false
 var tutorialComplete: bool = false
 var loveJohn: bool = false
 var loveNyan: bool = false
+var loveJesse: bool = false
+var loveKyle: bool = false
+var loveZed: bool = false
 
 #print every stat to the console
 func printStats():
