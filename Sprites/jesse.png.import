@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chunng4s8ysto"
-path="res://.godot/imported/charmjohn.png-7bfff3bdd91731fd55af6520e7f2cc26.ctex"
+uid="uid://b6kgc5aklpd30"
+path="res://.godot/imported/jesse.png-06c66f3264b432ba46bd5a002cbe2ab3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/charmjohn.png"
-dest_files=["res://.godot/imported/charmjohn.png-7bfff3bdd91731fd55af6520e7f2cc26.ctex"]
+source_file="res://Sprites/jesse.png"
+dest_files=["res://.godot/imported/jesse.png-06c66f3264b432ba46bd5a002cbe2ab3.ctex"]
 
 [params]
 

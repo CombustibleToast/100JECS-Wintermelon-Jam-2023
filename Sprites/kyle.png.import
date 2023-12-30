@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do6fs2j2xig0y"
-path="res://.godot/imported/charmdarren.png-77df28aefcc41a020ac4799bd8dd3076.ctex"
+uid="uid://cogqywwjoxdkv"
+path="res://.godot/imported/kyle.png-369ea4d96843fe6c94a8e889a75838ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/charmdarren.png"
-dest_files=["res://.godot/imported/charmdarren.png-77df28aefcc41a020ac4799bd8dd3076.ctex"]
+source_file="res://Sprites/kyle.png"
+dest_files=["res://.godot/imported/kyle.png-369ea4d96843fe6c94a8e889a75838ac.ctex"]
 
 [params]
 

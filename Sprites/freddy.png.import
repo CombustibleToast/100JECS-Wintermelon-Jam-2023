@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcpvhrifttlkc"
-path="res://.godot/imported/charmnyatthew.png-6e492b33365bd82cd7370913a6ba455a.ctex"
+uid="uid://bl2pqni3atvfs"
+path="res://.godot/imported/freddy.png-3dde3a6b521f458b6ea33ff02ab0b7cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/charmnyatthew.png"
-dest_files=["res://.godot/imported/charmnyatthew.png-6e492b33365bd82cd7370913a6ba455a.ctex"]
+source_file="res://Sprites/freddy.png"
+dest_files=["res://.godot/imported/freddy.png-3dde3a6b521f458b6ea33ff02ab0b7cb.ctex"]
 
 [params]
 

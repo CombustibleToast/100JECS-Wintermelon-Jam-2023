@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cogqywwjoxdkv"
-path="res://.godot/imported/charmnotjerma.png-73a3fb9efdfde4b346cb50f3d4a75011.ctex"
+uid="uid://dcpvhrifttlkc"
+path="res://.godot/imported/nyatthew.png-c6118083086b1ad8580143da5815abf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/charmnotjerma.png"
-dest_files=["res://.godot/imported/charmnotjerma.png-73a3fb9efdfde4b346cb50f3d4a75011.ctex"]
+source_file="res://Sprites/nyatthew.png"
+dest_files=["res://.godot/imported/nyatthew.png-c6118083086b1ad8580143da5815abf2.ctex"]
 
 [params]
 
