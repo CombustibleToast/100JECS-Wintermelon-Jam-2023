@@ -51,5 +51,3 @@ shape = SubResource("CircleShape2D_d75nb")
 
 [node name="Charm 1" parent="." instance=ExtResource("5_tv4ma")]
 position = Vector2(404, 446)
-dialogue_resource = ExtResource("6_43sgo")
-dialogue_start = "pick_up"
