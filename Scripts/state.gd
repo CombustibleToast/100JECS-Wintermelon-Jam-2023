@@ -9,6 +9,7 @@ var mystery: int = 3
 var confidence: int = 1
 
 var loveGodot: bool = false
+var loveJohn: bool = false
 
 #print every stat to the console
 func printStats():
