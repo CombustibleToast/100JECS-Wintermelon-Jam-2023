@@ -91,15 +91,15 @@ scale = Vector2(15.155, 15.155)
 shape = SubResource("CircleShape2D_d75nb")
 
 [node name="Charm 1 At" parent="." instance=ExtResource("5_tv4ma")]
-position = Vector2(-1774, -716)
+position = Vector2(2869, -735)
 scale = Vector2(3, 3)
 
 [node name="Charm 2 Af" parent="." instance=ExtResource("9_st11y")]
-position = Vector2(-868, 534)
+position = Vector2(-868, 315)
 scale = Vector2(3, 3)
 
 [node name="Charm 3 Fl" parent="." instance=ExtResource("10_1v8qn")]
-position = Vector2(-2576, -669)
+position = Vector2(-2167, -793)
 scale = Vector2(3, 3)
 
 [node name="Charm 4 My" parent="." instance=ExtResource("11_wkxqf")]
