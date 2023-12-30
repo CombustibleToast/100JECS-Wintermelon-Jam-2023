@@ -3,15 +3,15 @@
 [ext_resource type="PackedScene" uid="uid://cyiehnatqfhck" path="res://scenes/mall tilemap.tscn" id="1_a22w6"]
 [ext_resource type="PackedScene" uid="uid://b0i2mp7bid5r7" path="res://scenes/player.tscn" id="1_m11gp"]
 [ext_resource type="Texture2D" uid="uid://l3axkopxe5jx" path="res://icon.svg" id="3_org1u"]
-[ext_resource type="PackedScene" uid="uid://b7livbmiv1tc" path="res://scenes/NPC0.tscn" id="4_nhpjh"]
+[ext_resource type="PackedScene" uid="uid://cwy3vocqg8egb" path="res://scenes/NPC0.tscn" id="4_nhpjh"]
 [ext_resource type="PackedScene" uid="uid://bl22nydq2dimo" path="res://scenes/inventory.tscn" id="4_pt4xh"]
 [ext_resource type="Script" path="res://Scripts/GUI Control.gd" id="4_wp3tu"]
-[ext_resource type="PackedScene" uid="uid://d0tegvc31y5r" path="res://scenes/actionable.tscn" id="5_nrwwu"]
-[ext_resource type="PackedScene" uid="uid://dxirohtc1n0sq" path="res://scenes/NPCJohn.tscn" id="5_pr3so"]
+[ext_resource type="PackedScene" path="res://scenes/actionable.tscn" id="5_nrwwu"]
+[ext_resource type="PackedScene" uid="uid://duc6mt5pe7i7q" path="res://scenes/NPCJohn.tscn" id="5_pr3so"]
 [ext_resource type="PackedScene" uid="uid://5s0ggc164avm" path="res://scenes/charm_1.tscn" id="5_tv4ma"]
 [ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="6_43sgo"]
 [ext_resource type="Script" path="res://scenes/Label.gd" id="6_ah5oa"]
-[ext_resource type="PackedScene" uid="uid://cmug4y732tm4k" path="res://scenes/NPCNyan.tscn" id="6_vfcu2"]
+[ext_resource type="PackedScene" uid="uid://bsm1qq4mfckcq" path="res://scenes/NPCNyan.tscn" id="6_vfcu2"]
 [ext_resource type="PackedScene" uid="uid://dqckiugo3bw8d" path="res://scenes/charm_2.tscn" id="9_st11y"]
 [ext_resource type="PackedScene" uid="uid://cm3gecdv8yr7f" path="res://scenes/charm_3.tscn" id="10_1v8qn"]
 [ext_resource type="PackedScene" uid="uid://dfvv7qjlhbwrc" path="res://scenes/charm_4.tscn" id="11_wkxqf"]
@@ -91,16 +91,21 @@ scale = Vector2(15.155, 15.155)
 shape = SubResource("CircleShape2D_d75nb")
 
 [node name="Charm 1 At" parent="." instance=ExtResource("5_tv4ma")]
-position = Vector2(-1774, -716)
+position = Vector2(2869, -735)
+scale = Vector2(3, 3)
 
 [node name="Charm 2 Af" parent="." instance=ExtResource("9_st11y")]
-position = Vector2(-868, 534)
+position = Vector2(-868, 315)
+scale = Vector2(3, 3)
 
 [node name="Charm 3 Fl" parent="." instance=ExtResource("10_1v8qn")]
-position = Vector2(-2576, -669)
+position = Vector2(-2167, -793)
+scale = Vector2(3, 3)
 
 [node name="Charm 4 My" parent="." instance=ExtResource("11_wkxqf")]
 position = Vector2(-2780, -2376)
+scale = Vector2(3, 3)
 
 [node name="Charm 5 Co" parent="." instance=ExtResource("12_20jd6")]
 position = Vector2(-2704, -3898)
+scale = Vector2(3, 3)

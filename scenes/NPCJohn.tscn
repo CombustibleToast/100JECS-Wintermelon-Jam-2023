@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dxirohtc1n0sq"]
+[gd_scene load_steps=8 format=3 uid="uid://duc6mt5pe7i7q"]
 
 [ext_resource type="Script" path="res://Scripts/NPC0.gd" id="1_q8smp"]
-[ext_resource type="PackedScene" uid="uid://d0tegvc31y5r" path="res://scenes/actionable.tscn" id="2_688wv"]
+[ext_resource type="PackedScene" path="res://scenes/actionable.tscn" id="2_688wv"]
 [ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="3_tp087"]
 [ext_resource type="Texture2D" uid="uid://8xjm2m3ix58b" path="res://Sprites/fishestgup2.png" id="4_b18h1"]
+[ext_resource type="Texture2D" uid="uid://chunng4s8ysto" path="res://Sprites/charmjohn.png" id="4_qnury"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_py3fr"]
 radius = 1.12948
@@ -26,5 +27,9 @@ shape = SubResource("CircleShape2D_py3fr")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("RectangleShape2D_770q0")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="John" type="Sprite2D" parent="."]
+texture = ExtResource("4_qnury")
+
+[node name="gup" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("4_b18h1")
