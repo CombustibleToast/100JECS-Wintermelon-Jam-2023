@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/NPC0.gd" id="1_py4wx"]
 [ext_resource type="PackedScene" path="res://scenes/actionable.tscn" id="2_2ylqf"]
 [ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="3_4yrdp"]
-[ext_resource type="Texture2D" uid="uid://bl2pqni3atvfs" path="res://Sprites/charmfreddy.png" id="5_lc08t"]
+[ext_resource type="Texture2D" uid="uid://bl2pqni3atvfs" path="res://Sprites/freddy.png" id="5_lc08t"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_py3fr"]
 radius = 1.12948
