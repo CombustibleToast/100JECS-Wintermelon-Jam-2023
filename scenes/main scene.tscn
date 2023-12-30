@@ -1,12 +1,12 @@
-[gd_scene load_steps=19 format=3 uid="uid://1mby6blxc610"]
+[gd_scene load_steps=22 format=3 uid="uid://1mby6blxc610"]
 
 [ext_resource type="PackedScene" uid="uid://cyiehnatqfhck" path="res://scenes/mall tilemap.tscn" id="1_a22w6"]
 [ext_resource type="PackedScene" uid="uid://b0i2mp7bid5r7" path="res://scenes/player.tscn" id="1_m11gp"]
 [ext_resource type="Texture2D" uid="uid://l3axkopxe5jx" path="res://icon.svg" id="3_org1u"]
-[ext_resource type="PackedScene" uid="uid://cwy3vocqg8egb" path="res://scenes/NPC0.tscn" id="4_nhpjh"]
+[ext_resource type="PackedScene" uid="uid://b7livbmiv1tc" path="res://scenes/NPC0.tscn" id="4_nhpjh"]
 [ext_resource type="PackedScene" uid="uid://bl22nydq2dimo" path="res://scenes/inventory.tscn" id="4_pt4xh"]
 [ext_resource type="Script" path="res://Scripts/GUI Control.gd" id="4_wp3tu"]
-[ext_resource type="PackedScene" path="res://scenes/actionable.tscn" id="5_nrwwu"]
+[ext_resource type="PackedScene" uid="uid://d0tegvc31y5r" path="res://scenes/actionable.tscn" id="5_nrwwu"]
 [ext_resource type="PackedScene" uid="uid://duc6mt5pe7i7q" path="res://scenes/NPCJohn.tscn" id="5_pr3so"]
 [ext_resource type="PackedScene" uid="uid://5s0ggc164avm" path="res://scenes/charm_1.tscn" id="5_tv4ma"]
 [ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="6_43sgo"]
@@ -16,6 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://cm3gecdv8yr7f" path="res://scenes/charm_3.tscn" id="10_1v8qn"]
 [ext_resource type="PackedScene" uid="uid://dfvv7qjlhbwrc" path="res://scenes/charm_4.tscn" id="11_wkxqf"]
 [ext_resource type="PackedScene" uid="uid://bv5pa6lvacy7n" path="res://scenes/charm_5.tscn" id="12_20jd6"]
+[ext_resource type="PackedScene" uid="uid://bydhk7lsdw1ma" path="res://scenes/NPCJesse.tscn" id="17_c76vg"]
+[ext_resource type="PackedScene" uid="uid://bk561b2msmja0" path="res://scenes/NPCKyle.tscn" id="18_5f153"]
+[ext_resource type="PackedScene" uid="uid://d2wtjrqbqi6bx" path="res://scenes/NPCZed.tscn" id="19_lnajs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fat60"]
 
@@ -56,7 +59,7 @@ text = "Main screen Stat Text
 script = ExtResource("6_ah5oa")
 
 [node name="NPC0" parent="." instance=ExtResource("4_nhpjh")]
-position = Vector2(827, -265)
+position = Vector2(827, -250)
 scale = Vector2(-7.77, 8.608)
 
 [node name="NPCJohn" parent="." instance=ExtResource("5_pr3so")]
@@ -64,8 +67,16 @@ position = Vector2(-2104, -513)
 scale = Vector2(7, 7)
 
 [node name="NPCNyan" parent="." instance=ExtResource("6_vfcu2")]
-position = Vector2(1556, 318)
+position = Vector2(1443, 341)
 scale = Vector2(7.66, 7.66)
+
+[node name="NPCJesse" parent="." instance=ExtResource("17_c76vg")]
+position = Vector2(-2061, -3993)
+scale = Vector2(7.61, 7.61)
+
+[node name="NPCKyle" parent="." instance=ExtResource("18_5f153")]
+position = Vector2(2946, -81)
+scale = Vector2(7.56, 7.56)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 script = ExtResource("4_wp3tu")
@@ -91,7 +102,7 @@ scale = Vector2(15.155, 15.155)
 shape = SubResource("CircleShape2D_d75nb")
 
 [node name="Charm 1 At" parent="." instance=ExtResource("5_tv4ma")]
-position = Vector2(2869, -735)
+position = Vector2(3043, -856)
 scale = Vector2(3, 3)
 
 [node name="Charm 2 Af" parent="." instance=ExtResource("9_st11y")]
@@ -107,5 +118,9 @@ position = Vector2(-2780, -2376)
 scale = Vector2(3, 3)
 
 [node name="Charm 5 Co" parent="." instance=ExtResource("12_20jd6")]
-position = Vector2(-2704, -3898)
+position = Vector2(-2847, -3921)
 scale = Vector2(3, 3)
+
+[node name="NPCZed" parent="." instance=ExtResource("19_lnajs")]
+position = Vector2(2957, -3680)
+scale = Vector2(7.53, 7.53)

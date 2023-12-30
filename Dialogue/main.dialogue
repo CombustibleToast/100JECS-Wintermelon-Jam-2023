@@ -66,7 +66,7 @@ elif confidence > 3:
 		Britney: Oh is that supposed to be hard or something?
 		Britney: Or maybe you're just bad at video games
 		John: ...no I just
-		Britney: Just what? You're cute when you get flusted
+		Britney: Just what? You're cute when you get flustered
 		John: I'm not fl- wait did you say I was cute?
 		Britney: Eh I'm debating it, why don't you take me out on a date and help me decide how cute I think you actually are.
 		John: Wha- I mean- of course!!!
@@ -114,4 +114,89 @@ else
 ~ pick_up
 Britney: Don't mind if I do [next=auto]
 #set apple_status = "has"
+=> END
+
+~ Jesse
+if loveJesse == true:
+	Jesse: After Valentine's I Think I Will Talk With You Some More, Cutie!.
+    Jesse: And Also Maybe Think More About Myself. Since You ARe A New Type of Person To Me
+    Jesse: I Admire Your Spunk (Good Thinge)
+    Jesse: I'm No Faker, Not Like Snadow! Soz.... lols
+elif mystery > 3:
+	Jesse: I'd Like To Become Best Of Friends With You, Just Like Snick the Hog and Emi the Pink and Awesome Dog!
+    Jesse: I Guess I Would Be Snick in This Situation. What With Me Definitely Being A Dood and All Lools
+    Jesse: But... Emi's... Less Of A Jerk! Than Snick Is In Snick Encounters Director's Cut
+    Jesse: And I Like Pink More Than Blue! And My Name Rhymes With Emi!!!!
+    Jesse: ...it Also Rhymes Wif Britney!!! Woaaash
+    Jesse: We're Perfect Besties Together Lols
+    set loveJesse = true
+else
+	Jesse: What Do You Want? You've Been Friendley With A Lot Of People.
+    Jesse: Do You Need Something? Or Are You Trying To Sell Something?
+    Jesse: Either Way I Don't Think My Alowance Will Cover It.
+    Britney: ...
+    Jesse: Oh. You're That Birtney Girl, From Class, Aren't You?
+    Jesse: I'm... Jesse. But You Might Know Me By My Cooler Name.
+    Britney: ...?
+    Jesse: It's JESSAxTHExHECKINxHOG!! 
+    Britney: ...??
+    Jesse: It Was Supposed To Be Jesse. Like My Name. But I...
+    Jesse: MISSPELLED it!. That's What I Did. Unintentionally. 
+    Jesse: So Now, Cool People Know Me As Jessa.
+    Britney: ... :)
+    Jesse: Oh, you Like My Name?
+    Jesse: Thanks!!
+=> END 
+
+~ Kyle
+if loveKyle == true:
+	Kyle: We're gonna have sucha good date on Valentine's! I'm gonna make sure my camera's charged and everything!
+    Britney: oh boy
+elif affability > 3:
+	Kyle: HOLY SHIT YOUR NUMBERS ARE OFF THE CHART!!!S!!!
+    Britney: Are these date-able numbers?
+    Kyle: Yes of course!! Abso-freaking-lutely!!
+    set love = true
+else
+	Kyle: Hello everybody my name is Kyle and welcome to The Mall!
+    Britney: …?
+    Kyle: Sorry, I was practicing for my debut as a star on YouChute, where I will be uploading videos of myself to dozens or even hundreds of adoring fans! It’ll be le epic. 
+    Britney: Date me plz??
+    Kyle: Haha! ...wait, did you think I might be interested in you?
+    Britney: ...?????? I don't know? yes???
+    Kyle: What were you thinking??!! I’d rather drink an entire bottle of EZ Squirt Ketchup than be seen hanging out with a loser like you!
+    Kyle: Well, I suppose if you were to be more affable. More advertiser-friendly, rofl
+    Kyle: Then I would consider making you my epic co-star in my skits. 
+    Kyle: But hey, that’s just a theory. Thaaanks for talking. 
+=> END
+
+~ Zed
+if love == true:
+	Zed: *happy noises*
+    Zed: i... can't believe... it....
+    Zed: i'm... so happy.... *yawn*
+    Zed: i hope... there's like... four other peeps there... mumble mumble...
+elif attraction > 4:
+	Zed: holy... crap! there's like... this insane aura, man...
+    Zed: i... just realized... it's comign... from your phone, man...
+    Britney: it's a good aura, right? :)
+    Zed: ...
+    Britney: ...zed??
+    Zed: ...yeah man :)
+    Zed: whassat you wanted again?
+    Britney: a date?
+    Zed: sure... man... i'd like to date someone like you...
+    set love = true
+else
+	Zed: ... znnnznzzznnznnznnnznnz....
+    Zed: you're from class... I can tell by your... aura...
+    Zed: didn't... you and I play Jerry's Mod at some point...?? znnznzn
+    Britney: ...???
+    Zed: znnznnnznz..... maybe that was another girl,
+    Zed: you'll... never get my heart... saxor...
+    Britney: ...!
+    Zed: that's right... loser... i'm the undateable... ultra nerd...
+    Zed: i worked... very hard... to earn this title...
+    Britney: ...
+    Zed: ...not even if you asked, britney...
 => END
