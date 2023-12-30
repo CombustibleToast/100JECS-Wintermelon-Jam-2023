@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var inventory: CharmInventory = preload("res://Resources/charm inventory.tres")
 const SPEED = 300.0
+@onready var actionable_finder: Area2D = $Direction/ActionableFinder
 
 func _physics_process(delta):
 	# This script was created from the template player controller script for the CharacterBody2D node,
@@ -21,6 +22,14 @@ func _physics_process(delta):
 		# -Ena
 
 	move_and_slide() # This actually updates the node's position in the scene -Ena
+
+func _unhandled_input(event: InputEvent) -> void:
+	if Input.is_action_just_pressed("interact"):
+		var actionables = actionable_finder.get_overlapping_areas()
+		if actionables.size() > 0:
+			actionables[0].action()
+			return
+		
 
 # Created and linked by Godot: https://youtu.be/WVQkOWY3zxQ?list=PLMQtM2GgbPEVuTgD4Ln17ombTg6EahSLr&t=774
 func _on_interact_box_area_entered(area:Area2D):
