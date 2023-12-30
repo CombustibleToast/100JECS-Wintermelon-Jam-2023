@@ -20,4 +20,9 @@ func collect(inventory: CharmInventory):
 	# Create a new inventory item to be sent through the signal
 	DialogueManager.show_example_dialogue_balloon(dialogue_resource, dialogue_start)
 	inventory.insert_charm(associated_inventory_item_resource);
+
+	# Update state values
+	print("IMPLEMENT UPDATING STATE VALUES!!!!!!")
+	# State.attraction += ...
+
 	queue_free()

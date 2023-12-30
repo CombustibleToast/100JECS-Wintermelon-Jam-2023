@@ -55,15 +55,3 @@ shape = SubResource("CircleShape2D_d75nb")
 
 [node name="Charm 1" parent="." instance=ExtResource("5_tv4ma")]
 position = Vector2(404, 446)
-
-[node name="Charm 2" parent="." instance=ExtResource("9_st11y")]
-position = Vector2(-1608, -91)
-
-[node name="Charm 3" parent="." instance=ExtResource("10_1v8qn")]
-position = Vector2(-1662, -1272)
-
-[node name="Charm 4" parent="." instance=ExtResource("11_wkxqf")]
-position = Vector2(588, -1590)
-
-[node name="Charm 5" parent="." instance=ExtResource("12_20jd6")]
-position = Vector2(2443, -496)
