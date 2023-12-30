@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var inventory: CharmInventory = preload("res://Resources/charm inventory.tres")
-const SPEED = 300.0
+const SPEED = 600.0
 @onready var actionable_finder: Area2D = $Direction/ActionableFinder
 
 func _physics_process(delta):
