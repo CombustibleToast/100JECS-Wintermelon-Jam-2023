@@ -4,7 +4,7 @@ extends CharacterBody2D
 const SPEED = 600.0
 @onready var actionable_finder: Area2D = $Direction/ActionableFinder
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	# This script was created from the template player controller script for the CharacterBody2D node,
 	# but I've gutted it and made it look nicer lol
 	# -Ena
@@ -35,3 +35,4 @@ func _unhandled_input(event: InputEvent) -> void:
 func _on_interact_box_area_entered(area:Area2D):
 	if(area.has_method("collect")):
 		area.collect(inventory)
+

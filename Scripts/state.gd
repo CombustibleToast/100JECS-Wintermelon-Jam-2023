@@ -9,3 +9,13 @@ var mystery: int = 3
 var confidence: int = 1
 
 var loveGodot: bool = false
+
+#print every stat to the console
+func printStats():
+    print("Attraction: " + str(attraction))
+    print("Affability: " + str(affability))
+    print("Flattery: " + str(flattery))
+    print("Mystery: " + str(mystery))
+    print("Confidence: " + str(confidence))
+
+
