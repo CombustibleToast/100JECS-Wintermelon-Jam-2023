@@ -10,7 +10,7 @@ size = Vector2(28, 16)
 size = Vector2(34, 22)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3866k"]
-radius = 34.7131
+radius = 31.0161
 
 [node name="Player (CharacterBody)" type="CharacterBody2D"]
 script = ExtResource("1_oxeph")
@@ -34,5 +34,6 @@ collision_mask = 16
 
 [node name="CollisionFinder" type="CollisionShape2D" parent="Direction/ActionableFinder"]
 shape = SubResource("CircleShape2D_3866k")
+debug_color = Color(0.580392, 0.388235, 0.992157, 0.419608)
 
 [connection signal="area_entered" from="Interact Box" to="." method="_on_interact_box_area_entered"]

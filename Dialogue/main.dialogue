@@ -1,5 +1,24 @@
 ~ start
 
-Nathan: Hi!
+Brittany: Hello
+if attraction > 1 and loveGodot == false:
+	Brittany: Hey there.
+	- Flirts
+		Brittany: You're a QT 3.14159.
+		Mr. Godot: Thanks.
+		set loveGodot = true
+	- Dump hot coffee on him
+		Brittany: teehee :3c
+		Godot: I want to kill you.
+elif attraction > 1 and loveGodot == true:
+	Godot: Hey darling, want to eat dirt?
+elif attraction < 1 and loveGodot == false:
+	Godot: I'm a bit of freak, i like girls who are very pretty and nice to me 
+else
+	Godot: I don't know what to say to you...
+=> END
 
+~ pick_up
+Brittany: Don't mind if I do
+set apple_status = "has"
 => END

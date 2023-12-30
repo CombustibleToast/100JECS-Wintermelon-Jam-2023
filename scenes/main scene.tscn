@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://1mby6blxc610"]
+[gd_scene load_steps=11 format=3 uid="uid://1mby6blxc610"]
 
 [ext_resource type="PackedScene" uid="uid://b0i2mp7bid5r7" path="res://scenes/player.tscn" id="1_m11gp"]
 [ext_resource type="Texture2D" uid="uid://l3axkopxe5jx" path="res://icon.svg" id="3_org1u"]
@@ -11,6 +11,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fat60"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d75nb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j16gf"]
+size = Vector2(51, 82)
 
 [node name="Node2D" type="Node2D"]
 
@@ -43,3 +46,12 @@ shape = SubResource("CircleShape2D_d75nb")
 
 [node name="Charm 1" parent="." instance=ExtResource("5_tv4ma")]
 position = Vector2(630, 446)
+
+[node name="Actionable" parent="Charm 1" instance=ExtResource("5_nrwwu")]
+dialogue_resource = ExtResource("6_43sgo")
+dialogue_start = "pick_up"
+
+[node name="CollisionAction" type="CollisionShape2D" parent="Charm 1/Actionable"]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_j16gf")
+debug_color = Color(0.741176, 0.219608, 1, 0.419608)
