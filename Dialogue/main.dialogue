@@ -1,5 +1,203 @@
 ~ start
+Chris: Hi, this is a debug message.
+Book: ...
+Ena: 10101100100100001010100
+Jan: *Caws*
+Sam: I'm going to steal the declation of independence.
+=> END
 
-Nathan: Hi!
+~ tutorial
+if tutorialComplete == false:
+	Freddy: Oh, Brit, hey, over here!
+	Freddy: Still recognize lil ol me? yep i'm still casting spells. still disappointing my dad. that's me
+	Freddy: it was nice hearing your voice on the phone last night, been a year since I've heard you that hype.
+		you were all excited for us to go to the mall and pick up a date for valentine's day. Knowing you I guess you're looking for more than just one, but that's where I help, right?
+	Britney: ...
+	Freddy: ...oh, yeah, the phone, right. I made sure to reapply the enchantment after you called. It's all gassed up and ready for ya. lols
+	Freddy: you do remember the phone? how to use it?
+	Britney: ...
+	Freddy: what do you mean you don't remember you dorkasaurus, you called me here!!
+	Britney: sorry lols
+	Freddy: okay, as long as you have my magic phone in your inventory, its powers will boost the 5 basic aspects of your charm, think... "Charimsa" in D&D but chopped into 5 seperate stats.
+	Freddy: The boys at this mall are simple, listen to what they say and they'll reveal what appeals most to them. But at the end of the day, it's up to YOU to work your charm!
+	Freddy: What if your charm isn't enough? Well, I just so happen to know this mall is a nexus point for magical items. If you find your base level of charm isn't enough try looking around for a magic item to attatch to the charm loop on the phone!
+	Freddy: But BE CAREFUL... a magic charm isn't something to tread lighly with. Magical Items can have... detrimental effects.
+		And once you attach one to your phone, there's no undoing what happens.
+	Britney: ...
+	Freddy: HONESTLYDONTEVENWORRYABOUTITLOL Just have fun :3
+	Freddy: I learned all this from this ancient text called the Canto Enchiridius, so who knows if what I'm saying
+		is even correct. Here take a look at this chart from the book, in English, I think it's known as the RIZZ WHEEL?
+	Book: ...
+	Freddy: I don't know what that means either but basically just use the charms that seem right for the guy. I'm sure you can find some around here.
+		oh, and one more thing... do not to let the Voice On The Phone hear you.
+else
+	Freddy: oh hey, still need pointers?
+	Freddy: Remember that each Magical Item can have a positive or negative effect on different aespects of your charm.
+	Freddy: You don't need to pick each one up if it doesn't seem helpful to you
+	Freddy: There's probably a optimal order of picking the charms up and talking to the boys. What is it? LOL IDK
+	Freddy: Maybe this book can help you afterall?
+	Book: ...
+=> END
 
+~ John
+Britney: Hello
+if loveJohn == true:
+	John: Hey do you want to come back to my place and play Legion of Justice? I also have Battleworld!!!
+elif confidence > 3:
+	John: Hm...? i'm like... doing something here... *heh*
+	John: You're that weirdo girl hangin' out with that total nerd Fred
+	John: She's the REAL pleb. she doesn't even play Legion of Justice.
+	Britney: ...??
+	John: ...what do you mean 'how do i know that?' everyone plays that awesome game.
+	John: everyone... except losers like her... i don't even have to ask her.
+	John: what about you...? heh... i bet you don't even know what it is...
+	Britney: ...
+	- Flirts
+		Britney: Bro... Legion of Justice is literally my favorite game
+		John: For real? I didn't know girls could play video games??! And with such good taste...
+		John: ...
+		John: Hey listen, if you're not doing anything later... do you want to meet at the Pizza place for a slice? My treat!
+		Britney: *Wow this is too easy*
+		John: huh what'd you say?
+		Britney: Nothing!
+		set loveJohn = true
+	- Combat
+		Britney: Heh... Legion of Justice? Yeah I played it, it's good if you like basic shooters I guess. I got bored after getting 16 platnuim in it or whatever
+		John: ...16th Platium but that's
+		Britney: Oh is that supposed to be hard or something?
+		Britney: Or maybe you're just bad at video games
+		John: ...no I just
+		Britney: Just what? You're cute when you get flustered
+		John: I'm not fl- wait did you say I was cute?
+		Britney: Eh I'm debating it, why don't you take me out on a date and help me decide how cute I think you actually are.
+		John: Wha- I mean- of course!!!
+		set loveJohn = true
+else
+	John: Hm...? i'm like... doing something here... *heh*
+	John: You're that weirdo girl hangin' out with that total nerd Fred
+	John: She's the REAL pleb. she doesn't even play Legion of Justice.
+	Britney: ...??
+	John: ...what do you mean 'how do i know that?' everyone plays that awesome game.
+	John: everyone... except losers like her... i don't even have to ask her.
+	John: what about you...? heh... i bet you don't even know what it is...
+	- ...
+		Britney: *Is he serious, I love LOJ. I wish I had to confidence to speak up*
+		Britney: ...
+		John: If only there was such thing as a REAL gamer girl  
+=> END
+
+~ Nyan
+if loveNyan == true:
+	Nyatthew: OH EM GEE!!! IT"S MY FAVOWITE HUMAN! *Pounces with excitment* WUTS UP BWITTANNY! 
+elif flattery > 3:
+	Britney: Hewwo, hi you cute little kitty!
+	Nyatthew: UWU?
+	Britney: I LOVE your kitty ears, they look so soft
+	Nyatthew: THXX!!!!! OMG UR SO SWEET 2 ME! <3 <3
+	Britney: Well I was thinking...
+	Nyatthew: OF GETTING MARRIED?? I DON THINK IM READY FOR DAT!!
+	Britney: Uh... no a date... for Valentines day.
+	Nyatthew: OH!!! I C! SO YOU WAN 2 HANG OUT! THEN WE CULD RULE TEH WORLD WITH TEH DARK SIDE (It has cookies :3)
+	Britney: Yeah... (What have I gotten myself into now)
+	set loveNyan = true
+else
+	Britney: Hello
+	Nyatthew: ...
+	Britney: Hewwo?
+	Nyatthew: HEWOO!!! 
+	Nyatthew: LOL LIEK WHO R U? WHY R UR CLOTHEZ SO BLACK RLY KILLIN TEH MOOD XD! MY OUTFIT IS KAWAII THOUGH RIGHT??!
+	Nyatthew: OTHER BOYZ MUST SEZ U A 2TAL LAMEO! TEH KRIIPY KITEH DAS YU!!! GOT NO FRENS ON UR SPACESPACE PAGE LOLOL. ME??? I'M LIKE A CELEB ON DERR, I LOVE ATTENTIONNNN!!
+	Britney: Oh, um, sorry to bother you. I just thought maybe we could, you know, chat or something.
+	Nyatthew: LOLOL U CHTTIN WITH TEH CUTESY KITTY IN TOWWN? ROFL NO MY FRWENS HAVE TASTE. YOU HAVEN'T EVEN COMPLIMENTED MY CUTE KITTYKAT EARS D:<
+=> END
+
+
+~ pick_up
+Britney: Don't mind if I do [next=auto]
+#set apple_status = "has"
+=> END
+
+~ Jesse
+if loveJesse == true:
+	Jesse: After Valentine's I Think I Will Talk With You Some More, Cutie!.
+    Jesse: And Also Maybe Think More About Myself. Since You ARe A New Type of Person To Me
+    Jesse: I Admire Your Spunk (Good Thinge)
+    Jesse: I'm No Faker, Not Like Snadow! Soz.... lols
+elif mystery > 3:
+	Jesse: I'd Like To Become Best Of Friends With You, Just Like Snick the Hog and Emi the Pink and Awesome Dog!
+    Jesse: I Guess I Would Be Snick in This Situation. What With Me Definitely Being A Dood and All Lools
+    Jesse: But... Emi's... Less Of A Jerk! Than Snick Is In Snick Encounters Director's Cut
+    Jesse: And I Like Pink More Than Blue! And My Name Rhymes With Emi!!!!
+    Jesse: ...it Also Rhymes Wif Britney!!! Woaaash
+    Jesse: We're Perfect Besties Together Lols
+    set loveJesse = true
+else
+	Jesse: What Do You Want? You've Been Friendley With A Lot Of People.
+    Jesse: Do You Need Something? Or Are You Trying To Sell Something?
+    Jesse: Either Way I Don't Think My Alowance Will Cover It.
+    Britney: ...
+    Jesse: Oh. You're That Birtney Girl, From Class, Aren't You?
+    Jesse: I'm... Jesse. But You Might Know Me By My Cooler Name.
+    Britney: ...?
+    Jesse: It's JESSAxTHExHECKINxHOG!! 
+    Britney: ...??
+    Jesse: It Was Supposed To Be Jesse. Like My Name. But I...
+    Jesse: MISSPELLED it!. That's What I Did. Unintentionally. 
+    Jesse: So Now, Cool People Know Me As Jessa.
+    Britney: ... :)
+    Jesse: Oh, you Like My Name?
+    Jesse: Thanks!!
+=> END 
+
+~ Kyle
+if loveKyle == true:
+	Kyle: We're gonna have sucha good date on Valentine's! I'm gonna make sure my camera's charged and everything!
+    Britney: oh boy
+elif affability > 3:
+	Kyle: HOLY SHIT YOUR NUMBERS ARE OFF THE CHART!!!S!!!
+    Britney: Are these date-able numbers?
+    Kyle: Yes of course!! Abso-freaking-lutely!!
+    set love = true
+else
+	Kyle: Hello everybody my name is Kyle and welcome to The Mall!
+    Britney: …?
+    Kyle: Sorry, I was practicing for my debut as a star on YouChute, where I will be uploading videos of myself to dozens or even hundreds of adoring fans! It’ll be le epic. 
+    Britney: Date me plz??
+    Kyle: Haha! ...wait, did you think I might be interested in you?
+    Britney: ...?????? I don't know? yes???
+    Kyle: What were you thinking??!! I’d rather drink an entire bottle of EZ Squirt Ketchup than be seen hanging out with a loser like you!
+    Kyle: Well, I suppose if you were to be more affable. More advertiser-friendly, rofl
+    Kyle: Then I would consider making you my epic co-star in my skits. 
+    Kyle: But hey, that’s just a theory. Thaaanks for talking. 
+=> END
+
+~ Zed
+if love == true:
+	Zed: *happy noises*
+    Zed: i... can't believe... it....
+    Zed: i'm... so happy.... *yawn*
+    Zed: i hope... there's like... four other peeps there... mumble mumble...
+elif attraction > 4:
+	Zed: holy... crap! there's like... this insane aura, man...
+    Zed: i... just realized... it's comign... from your phone, man...
+    Britney: it's a good aura, right? :)
+    Zed: ...
+    Britney: ...zed??
+    Zed: ...yeah man :)
+    Zed: whassat you wanted again?
+    Britney: a date?
+    Zed: sure... man... i'd like to date someone like you...
+    set love = true
+else
+	Zed: ... znnnznzzznnznnznnnznnz....
+    Zed: you're from class... I can tell by your... aura...
+    Zed: didn't... you and I play Jerry's Mod at some point...?? znnznzn
+    Britney: ...???
+    Zed: znnznnnznz..... maybe that was another girl,
+    Zed: you'll... never get my heart... saxor...
+    Britney: ...!
+    Zed: that's right... loser... i'm the undateable... ultra nerd...
+    Zed: i worked... very hard... to earn this title...
+    Britney: ...
+    Zed: ...not even if you asked, britney...
 => END

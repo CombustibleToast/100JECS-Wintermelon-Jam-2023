@@ -6,3 +6,10 @@
 [resource]
 script = ExtResource("1_l6rm0")
 texture = ExtResource("2_hatoe")
+stats = {
+"affability": 3,
+"attraction": 1,
+"confidence": 1,
+"flattery": 2,
+"mystery": -1
+}

@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=3 uid="uid://bk561b2msmja0"]
+
+[ext_resource type="Script" path="res://Scripts/NPC0.gd" id="1_kqq8h"]
+[ext_resource type="PackedScene" uid="uid://d0tegvc31y5r" path="res://scenes/actionable.tscn" id="2_wscto"]
+[ext_resource type="Resource" uid="uid://cihs2optnp0lt" path="res://Dialogue/main.dialogue" id="3_pa6ii"]
+[ext_resource type="Texture2D" uid="uid://cogqywwjoxdkv" path="res://Sprites/charmnotjerma.png" id="4_vroku"]
+[ext_resource type="Texture2D" uid="uid://8xjm2m3ix58b" path="res://Sprites/fishestgup2.png" id="5_4cavx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_py3fr"]
+radius = 1.12948
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_770q0"]
+
+[node name="NPCKyle" type="Node2D"]
+script = ExtResource("1_kqq8h")
+
+[node name="Actionable" parent="." instance=ExtResource("2_wscto")]
+dialogue_resource = ExtResource("3_pa6ii")
+dialogue_start = "Kyle"
+
+[node name="CollisionConvo" type="CollisionShape2D" parent="Actionable"]
+scale = Vector2(15.155, 15.155)
+shape = SubResource("CircleShape2D_py3fr")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_770q0")
+
+[node name="Kyle" type="Sprite2D" parent="."]
+texture = ExtResource("4_vroku")
+
+[node name="gup" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("5_4cavx")

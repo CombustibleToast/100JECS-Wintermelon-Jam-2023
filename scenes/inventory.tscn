@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bl22nydq2dimo"]
+[gd_scene load_steps=5 format=3 uid="uid://bl22nydq2dimo"]
 
 [ext_resource type="Script" path="res://Scripts/inventory view.gd" id="1_736dy"]
 [ext_resource type="Texture2D" uid="uid://bkvyqiavk1bvs" path="res://Sprites/placeholder phone.png" id="1_h2mbv"]
 [ext_resource type="PackedScene" uid="uid://ccwd4jkoj4is6" path="res://scenes/charm slot.tscn" id="2_2wst7"]
+[ext_resource type="Script" path="res://scenes/Label.gd" id="4_bjyw6"]
 
 [node name="Inventory (Control Node)" type="Control"]
 layout_mode = 3
@@ -13,8 +14,27 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_736dy")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -11.0
+offset_top = 3.0
+offset_right = 29.0
+offset_bottom = 43.0
+scale = Vector2(34.8477, 19.3849)
+color = Color(0.54902, 0.54902, 0.54902, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect"]
+layout_mode = 0
+offset_left = -0.277874
+offset_top = -0.554406
+offset_right = 39.7221
+offset_bottom = 39.4456
+scale = Vector2(1.00193, 0.158485)
+color = Color(0.137255, 0.192157, 0.764706, 1)
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(656, 376)
+position = Vector2(647, 428)
+rotation = -0.218166
 scale = Vector2(9.72, 9.72)
 texture = ExtResource("1_h2mbv")
 
@@ -50,3 +70,15 @@ layout_mode = 2
 
 [node name="Slot 4" parent="GridContainer" instance=ExtResource("2_2wst7")]
 layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+visibility_layer = 3
+layout_mode = 1
+offset_left = 100.0
+offset_top = 12.0
+offset_right = 1200.0
+offset_bottom = 76.0
+text = "Inventory Text
+"
+horizontal_alignment = 1
+script = ExtResource("4_bjyw6")

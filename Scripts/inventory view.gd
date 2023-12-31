@@ -6,6 +6,8 @@ var is_open: bool = false
 @onready var inventory: CharmInventory = preload("res://Resources/charm inventory.tres")
 @onready var slots: Array = $GridContainer.get_children()
 
+
+
 func _ready():
 	inventory.new_item_in_inventory.connect(update)
 	update()
@@ -32,4 +34,4 @@ func close():
 
 func on_slot_clicked(slot):
 	print(slot.name)
-	slot.
+	
